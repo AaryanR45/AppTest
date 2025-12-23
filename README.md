@@ -16,11 +16,16 @@ This project demonstrates **end-to-end mobile automation testing** of an Android
 
 ## Project Structure
 
-Apptest/
-│── tests/
-│ └── test_settings.py
-│── requirements.txt
-│── .gitignore
+Apptest/  
+
+│── tests/  
+
+│ └── test_settings.py  
+
+│── requirements.txt  
+
+│── .gitignore  
+
 │── README.md
 
 ## Prerequisites
@@ -41,52 +46,74 @@ Make sure the following are installed and configured:
 - Android Emulator (AVD) created and running
 
 Verify device connection:
-bash
+bash  
+
 adb devices
 
 ### 3️⃣ Appium Setup (v2)
 Install Appium globally:
-bash
+bash  
+
 npm install -g appium
 
 Install Android driver:
-bash
+bash  
+
 appium driver install uiautomator2
 
 Verify:
-bash
+bash  
+
 appium driver list --installed
 
 Start Appium server:
-bash
+bash  
+
 appium
 
 ### 4️⃣ Python Dependencies
 Install required libraries:
-bash
+bash   
+
 pip install -r requirements.txt
 
 
 Appium Inspector Usage
 
-Start Android Emulator
-Start Appium Server
-Open Appium Inspector (Desktop App)
-Use the following capabilities: json
-{
-  "platformName": "Android",
-  "appium:automationName": "UiAutomator2",
-  "appium:deviceName": "Android Emulator",
-  "appium:platformVersion": "11",
-  "appium:appPackage": "com.android.settings",
-  "appium:appActivity": ".Settings"
-}
-These need to changed for different apps/apk. This is only a demo for default android settings app.
+Start Android Emulator  
+
+Start Appium Server  
+
+Open Appium Inspector (Desktop App)  
+
+Use the following capabilities: json  
+
+{  
+
+  "platformName": "Android",  
+  
+  "appium:automationName": "UiAutomator2",  
+  
+  "appium:deviceName": "Android Emulator",  
+  
+  "appium:platformVersion": "11",  
+  
+  "appium:appPackage": "com.android.settings",  
+  
+  "appium:appActivity": ".Settings"  
+  
+}  
+
+These need to changed for different apps/apk. This is only a demo for default android settings app.  
+
 Start session and inspect UI elements
 
 Capture locators for automation scripts
 
-Running the Tests
-Run all tests
-bash
+Running the Tests  
+
+Run all tests  
+
+bash  
+
 pytest -v
