@@ -45,34 +45,40 @@ Make sure the following are installed and configured:
 - Android SDK & Platform Tools installed
 - Android Emulator (AVD) created and running
 
-Verify device connection:
+Verify device connection:  
+
 bash  
 
 adb devices
 
 ### 3️⃣ Appium Setup (v2)
-Install Appium globally:
+#### Install Appium globally:  
+
 bash  
 
 npm install -g appium
 
-Install Android driver:
+#### Install Android driver:  
+
 bash  
 
 appium driver install uiautomator2
 
-Verify:
+#### Verify:  
+
 bash  
 
 appium driver list --installed
 
-Start Appium server:
+#### Start Appium server:  
+
 bash  
 
 appium
 
 ### 4️⃣ Python Dependencies
-Install required libraries:
+Install required libraries:  
+
 bash   
 
 pip install -r requirements.txt
