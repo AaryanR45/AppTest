@@ -45,7 +45,7 @@ Make sure the following are installed and configured:
 - Android SDK & Platform Tools installed
 - Android Emulator (AVD) created and running
 
-Verify device connection:  
+#### Verify device connection:  
 
 bash  
 
@@ -84,15 +84,13 @@ bash
 pip install -r requirements.txt
 
 
-Appium Inspector Usage
+### Appium Inspector Usage
 
-Start Android Emulator  
-
-Start Appium Server  
-
-Open Appium Inspector (Desktop App)  
-
-Use the following capabilities: json  
+- Start Android Emulator  
+- Start Appium Server  
+- Open Appium Inspector (Desktop App)  
+- Use the following capabilities:
+json  
 
 {  
 
@@ -112,11 +110,11 @@ Use the following capabilities: json
 
 These need to changed for different apps/apk. This is only a demo for default android settings app.  
 
-Start session and inspect UI elements
+- Start session and inspect UI elements
 
-Capture locators for automation scripts
+- Capture locators for automation scripts
 
-Running the Tests  
+### Running the Tests  
 
 Run all tests  
 
