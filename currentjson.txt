@@ -1,0 +1,6 @@
+{
+  "platformName": "Android",
+  "deviceName": "emulator-5554",
+  "automationName": "UiAutomator2",
+  "app": "C:/Users/aaryan/Desktop/AppTest/apps/TheApp.apk"
+}
