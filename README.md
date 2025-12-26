@@ -120,4 +120,6 @@ Run all tests
 
 bash  
 
-pytest -v
+pytest -v  
+
+robot -d reports tests/
