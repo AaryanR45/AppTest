@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.11.0 on win32)" generated="2025-12-26T12:19:15.714201" rpa="false" schemaversion="5">
-<suite id="s1" name="Tests" source="C:\Users\aaryan\Desktop\AppTest\tests">
-<suite id="s1-s1" name="Login Failure" source="C:\Users\aaryan\Desktop\AppTest\tests\login_failure.robot">
+<robot generator="Robot 7.4.1 (Python 3.11.3 on win32)" generated="2025-12-31T15:57:10.389965" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="A:\AppTest\tests">
+<suite id="s1-s1" name="Login Failure" source="A:\AppTest\tests\login_failure.robot">
 <test id="s1-s1-t1" name="Invalid User Cannot Login" line="5">
 <kw name="Open App" owner="keywords">
 <kw name="Open Application" owner="AppiumLibrary">
@@ -16,102 +16,102 @@ Please check https://appium.io/docs/en/2.19/guides/caps/
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | No     | alias             |</doc>
-<status status="PASS" start="2025-12-26T12:19:16.245738" elapsed="5.426161"/>
+<status status="PASS" start="2025-12-31T15:57:10.640885" elapsed="9.122428"/>
 </kw>
-<status status="PASS" start="2025-12-26T12:19:16.244738" elapsed="5.428161"/>
+<status status="PASS" start="2025-12-31T15:57:10.639885" elapsed="9.123428"/>
 </kw>
 <kw name="Go To Login Screen" owner="keywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>android=UiSelector().textContains("Login Screen")</arg>
 <arg>15s</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-26T12:19:21.673899" elapsed="2.224898"/>
+<status status="PASS" start="2025-12-31T15:57:19.763313" elapsed="1.095558"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-26T12:19:23.900798" level="INFO">Clicking element 'android=UiSelector().textContains("Login Screen")'.</msg>
+<msg time="2025-12-31T15:57:20.859874" level="INFO">Clicking element 'android=UiSelector().textContains("Login Screen")'.</msg>
 <arg>android=UiSelector().textContains("Login Screen")</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-26T12:19:23.898797" elapsed="0.183025"/>
+<status status="PASS" start="2025-12-31T15:57:20.858871" elapsed="0.954012"/>
 </kw>
-<status status="PASS" start="2025-12-26T12:19:21.672899" elapsed="2.408923"/>
+<status status="PASS" start="2025-12-31T15:57:19.763313" elapsed="2.049570"/>
 </kw>
 <kw name="Login With Credentials" owner="keywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>accessibility_id=username</arg>
 <arg>5s</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-26T12:19:24.082817" elapsed="1.068528"/>
+<status status="PASS" start="2025-12-31T15:57:21.815877" elapsed="0.064380"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-12-26T12:19:25.154347" level="INFO">Typing text 'wrong' into text field 'accessibility_id=username'</msg>
+<msg time="2025-12-31T15:57:21.881324" level="INFO">Typing text 'wrong' into text field 'accessibility_id=username'</msg>
 <arg>accessibility_id=username</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-26T12:19:25.152348" elapsed="0.583558"/>
+<status status="PASS" start="2025-12-31T15:57:21.881324" elapsed="1.151039"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>accessibility_id=password</arg>
 <arg>5s</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-26T12:19:25.736910" elapsed="0.531840"/>
+<status status="PASS" start="2025-12-31T15:57:23.032363" elapsed="0.545498"/>
 </kw>
 <kw name="Input Password" owner="AppiumLibrary">
-<msg time="2025-12-26T12:19:26.269749" level="INFO">Typing password into text field 'accessibility_id=password'</msg>
+<msg time="2025-12-31T15:57:23.578862" level="INFO">Typing password into text field 'accessibility_id=password'</msg>
 <arg>accessibility_id=password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-26T12:19:26.268750" elapsed="0.567862"/>
+<status status="PASS" start="2025-12-31T15:57:23.577861" elapsed="0.555344"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>android=UiSelector().text("Login").instance(1)</arg>
 <arg>5s</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-26T12:19:26.836612" elapsed="0.545273"/>
+<status status="PASS" start="2025-12-31T15:57:24.134205" elapsed="0.554928"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-26T12:19:27.383882" level="INFO">Clicking element 'android=UiSelector().text("Login").instance(1)'.</msg>
+<msg time="2025-12-31T15:57:24.690146" level="INFO">Clicking element 'android=UiSelector().text("Login").instance(1)'.</msg>
 <arg>android=UiSelector().text("Login").instance(1)</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-26T12:19:27.381885" elapsed="0.140763"/>
+<status status="PASS" start="2025-12-31T15:57:24.689133" elapsed="0.085519"/>
 </kw>
 <arg>${INVALID_USER}</arg>
 <arg>${INVALID_PASS}</arg>
-<status status="PASS" start="2025-12-26T12:19:24.082817" elapsed="3.439831"/>
+<status status="PASS" start="2025-12-31T15:57:21.814878" elapsed="2.959774"/>
 </kw>
 <kw name="Verify Invalid Login Alert" owner="keywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>android=UiSelector().textContains("Invalid login")</arg>
 <arg>10s</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-26T12:19:27.523646" elapsed="0.720996"/>
+<status status="PASS" start="2025-12-31T15:57:24.775660" elapsed="0.567458"/>
 </kw>
 <kw name="Element Text Should Be" owner="AppiumLibrary">
-<msg time="2025-12-26T12:19:28.246644" level="INFO">Verifying element 'android=UiSelector().text("Invalid login credentials, please try again")' contains exactly text 'Invalid login credentials, please try again'.</msg>
+<msg time="2025-12-31T15:57:25.344110" level="INFO">Verifying element 'android=UiSelector().text("Invalid login credentials, please try again")' contains exactly text 'Invalid login credentials, please try again'.</msg>
 <arg>android=UiSelector().text("Invalid login credentials, please try again")</arg>
 <arg>Invalid login credentials, please try again</arg>
 <doc>Verifies that the element identified by ``locator`` contains the exact text ``expected``.</doc>
-<status status="PASS" start="2025-12-26T12:19:28.244642" elapsed="0.062023"/>
+<status status="PASS" start="2025-12-31T15:57:25.343118" elapsed="0.048055"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-26T12:19:28.308662" level="INFO">Clicking element 'android=UiSelector().text("OK")'.</msg>
+<msg time="2025-12-31T15:57:25.392179" level="INFO">Clicking element 'android=UiSelector().text("OK")'.</msg>
 <arg>android=UiSelector().text("OK")</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-26T12:19:28.307667" elapsed="0.859751"/>
+<status status="PASS" start="2025-12-31T15:57:25.391173" elapsed="0.088664"/>
 </kw>
-<status status="PASS" start="2025-12-26T12:19:27.523646" elapsed="1.643772"/>
+<status status="PASS" start="2025-12-31T15:57:24.775660" elapsed="0.704177"/>
 </kw>
 <kw name="Close App" owner="keywords">
 <kw name="Close Application" owner="AppiumLibrary">
 <doc>Closes the current application and the webdriver session.</doc>
-<status status="PASS" start="2025-12-26T12:19:29.168416" elapsed="0.820813"/>
+<status status="PASS" start="2025-12-31T15:57:25.480837" elapsed="1.461285"/>
 </kw>
-<status status="PASS" start="2025-12-26T12:19:29.167418" elapsed="0.821811"/>
+<status status="PASS" start="2025-12-31T15:57:25.479837" elapsed="1.462285"/>
 </kw>
-<status status="PASS" start="2025-12-26T12:19:16.243736" elapsed="13.746492"/>
+<status status="PASS" start="2025-12-31T15:57:10.639885" elapsed="16.303238"/>
 </test>
-<status status="PASS" start="2025-12-26T12:19:15.752220" elapsed="14.239011"/>
+<status status="PASS" start="2025-12-31T15:57:10.413799" elapsed="16.529324"/>
 </suite>
-<suite id="s1-s2" name="Login Success" source="C:\Users\aaryan\Desktop\AppTest\tests\login_success.robot">
+<suite id="s1-s2" name="Login Success" source="A:\AppTest\tests\login_success.robot">
 <test id="s1-s2-t1" name="Valid User Can Login" line="5">
 <kw name="Open App" owner="keywords">
 <kw name="Open Application" owner="AppiumLibrary">
@@ -126,80 +126,80 @@ Please check https://appium.io/docs/en/2.19/guides/caps/
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | No     | alias             |</doc>
-<status status="PASS" start="2025-12-26T12:19:30.018230" elapsed="7.644149"/>
+<status status="PASS" start="2025-12-31T15:57:26.948597" elapsed="3.872858"/>
 </kw>
-<status status="PASS" start="2025-12-26T12:19:30.018230" elapsed="7.644149"/>
+<status status="PASS" start="2025-12-31T15:57:26.948597" elapsed="3.872858"/>
 </kw>
 <kw name="Go To Login Screen" owner="keywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>android=UiSelector().textContains("Login Screen")</arg>
 <arg>15s</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-26T12:19:37.663377" elapsed="1.838054"/>
+<status status="PASS" start="2025-12-31T15:57:30.822453" elapsed="0.919266"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-26T12:19:39.502431" level="INFO">Clicking element 'android=UiSelector().textContains("Login Screen")'.</msg>
+<msg time="2025-12-31T15:57:31.742719" level="INFO">Clicking element 'android=UiSelector().textContains("Login Screen")'.</msg>
 <arg>android=UiSelector().textContains("Login Screen")</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-26T12:19:39.501431" elapsed="0.181187"/>
+<status status="PASS" start="2025-12-31T15:57:31.741719" elapsed="0.116869"/>
 </kw>
-<status status="PASS" start="2025-12-26T12:19:37.663377" elapsed="2.019241"/>
+<status status="PASS" start="2025-12-31T15:57:30.822453" elapsed="1.037139"/>
 </kw>
 <kw name="Login With Credentials" owner="keywords">
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>accessibility_id=username</arg>
 <arg>5s</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-26T12:19:39.683619" elapsed="1.092038"/>
+<status status="PASS" start="2025-12-31T15:57:31.859592" elapsed="0.842396"/>
 </kw>
 <kw name="Input Text" owner="AppiumLibrary">
-<msg time="2025-12-26T12:19:40.777656" level="INFO">Typing text 'aaryan' into text field 'accessibility_id=username'</msg>
+<msg time="2025-12-31T15:57:32.703993" level="INFO">Typing text 'aaryan' into text field 'accessibility_id=username'</msg>
 <arg>accessibility_id=username</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-26T12:19:40.775657" elapsed="0.582427"/>
+<status status="PASS" start="2025-12-31T15:57:32.702989" elapsed="0.553136"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>accessibility_id=password</arg>
 <arg>5s</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-26T12:19:41.359091" elapsed="0.502077"/>
+<status status="PASS" start="2025-12-31T15:57:33.256125" elapsed="0.528817"/>
 </kw>
 <kw name="Input Password" owner="AppiumLibrary">
-<msg time="2025-12-26T12:19:41.863169" level="INFO">Typing password into text field 'accessibility_id=password'</msg>
+<msg time="2025-12-31T15:57:33.785959" level="INFO">Typing password into text field 'accessibility_id=password'</msg>
 <arg>accessibility_id=password</arg>
 <arg>${password}</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-26T12:19:41.861168" elapsed="0.572264"/>
+<status status="PASS" start="2025-12-31T15:57:33.784942" elapsed="0.548934"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
 <arg>android=UiSelector().text("Login").instance(1)</arg>
 <arg>5s</arg>
 <doc>Waits until the element specified by the ``locator`` is visible.</doc>
-<status status="PASS" start="2025-12-26T12:19:42.433432" elapsed="0.539618"/>
+<status status="PASS" start="2025-12-31T15:57:34.333876" elapsed="0.532080"/>
 </kw>
 <kw name="Click Element" owner="AppiumLibrary">
-<msg time="2025-12-26T12:19:42.975051" level="INFO">Clicking element 'android=UiSelector().text("Login").instance(1)'.</msg>
+<msg time="2025-12-31T15:57:34.866947" level="INFO">Clicking element 'android=UiSelector().text("Login").instance(1)'.</msg>
 <arg>android=UiSelector().text("Login").instance(1)</arg>
 <doc>Clicks the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-12-26T12:19:42.974050" elapsed="0.132004"/>
+<status status="PASS" start="2025-12-31T15:57:34.865956" elapsed="0.076644"/>
 </kw>
 <arg>${VALID_USER}</arg>
 <arg>${VALID_PASS}</arg>
-<status status="PASS" start="2025-12-26T12:19:39.682618" elapsed="3.423436"/>
+<status status="PASS" start="2025-12-31T15:57:31.859592" elapsed="3.083008"/>
 </kw>
 <kw name="Close App" owner="keywords">
 <kw name="Close Application" owner="AppiumLibrary">
 <doc>Closes the current application and the webdriver session.</doc>
-<status status="PASS" start="2025-12-26T12:19:43.107050" elapsed="1.447404"/>
+<status status="PASS" start="2025-12-31T15:57:34.943601" elapsed="0.358584"/>
 </kw>
-<status status="PASS" start="2025-12-26T12:19:43.107050" elapsed="1.448404"/>
+<status status="PASS" start="2025-12-31T15:57:34.942600" elapsed="0.360578"/>
 </kw>
-<status status="PASS" start="2025-12-26T12:19:30.015230" elapsed="14.540224"/>
+<status status="PASS" start="2025-12-31T15:57:26.947600" elapsed="8.355578"/>
 </test>
-<status status="PASS" start="2025-12-26T12:19:29.993230" elapsed="14.564219"/>
+<status status="PASS" start="2025-12-31T15:57:26.944121" elapsed="8.359057"/>
 </suite>
-<status status="PASS" start="2025-12-26T12:19:15.717199" elapsed="28.841251"/>
+<status status="PASS" start="2025-12-31T15:57:10.390965" elapsed="24.912213"/>
 </suite>
 <statistics>
 <total>
